@@ -62,6 +62,7 @@ function requerir_no_existe_directorio() {
 	then
 		echo "$2"
 		exit $3
+	fi
 
 }
 
@@ -71,6 +72,7 @@ function requerir_no_existe_archivo() {
 	then
 		echo "$2"
 		exit $3
+	fi
 
 }
 
