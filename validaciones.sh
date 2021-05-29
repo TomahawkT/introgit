@@ -56,8 +56,23 @@ function requerir_archivo() {
 	fi
 }
 
+function requerir_no_existe_directorio() {
 
+	if [ -d $1 ]
+	then
+		echo "$2"
+		exit $3
 
+}
+
+function requerir_no_existe_archivo() {
+
+	if [ -f $1 ]
+	then
+		echo "$2"
+		exit $3
+
+}
 
 
 
