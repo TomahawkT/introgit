@@ -28,4 +28,42 @@ function requerir_igualdad() {
 
 }
 
+function requerir_numero() {
+
+	is_numero $1 
+	if [ "$?" -ne 0 ]
+	then 
+		echo "$2"
+		exit $3
+	fi
+}
+
+function requerir_directorio() {
+
+	if [ ! -d $1 ]
+	then
+		echo "$2"
+		exit $3
+	fi
+}
+
+function requerir_archivo() {
+
+	if [ ! -f $1 ]
+	then
+		echo "$2"
+		exit $3
+	fi
+}
+
+
+
+
+
+
+
+
+
+
+
 
